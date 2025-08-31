@@ -1,0 +1,19 @@
+{
+    "name": "Nvidia Container Toolkit",
+    "id": "nvidia-container-toolkit",
+    "version": "0.0.1",
+    "description": "A feature to enable the Nvidia Container Toolkit",
+    "options": {
+        "version": {
+            "type": "string",
+            "enum": [
+                "1.17.8-1"
+            ],
+            "default": "1.17.8-1",
+            "description": "Choose the version of the Nvidia Container Toolkit."
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    }
+}
